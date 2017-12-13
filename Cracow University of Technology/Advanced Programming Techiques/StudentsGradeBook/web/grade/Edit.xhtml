@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.EditGradeTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.EditGradeLabel_id}" for="id" />
+                    <h:inputText id="id" value="#{gradeController.selected.id}" title="#{bundle.EditGradeTitle_id}" required="true" requiredMessage="#{bundle.EditGradeRequiredMessage_id}"/>
+                    <h:outputLabel value="#{bundle.EditGradeLabel_date}" for="date" />
+                    <h:inputText id="date" value="#{gradeController.selected.date}" title="#{bundle.EditGradeTitle_date}" required="true" requiredMessage="#{bundle.EditGradeRequiredMessage_date}">
+                        <f:convertDateTime pattern="MM/dd/yyyy" />
+                    </h:inputText>
+                    <h:outputLabel value="#{bundle.EditGradeLabel_idGradescale}" for="idGradescale" />
+                    <h:selectOneMenu id="idGradescale" value="#{gradeController.selected.idGradescale}" title="#{bundle.EditGradeTitle_idGradescale}" required="true" requiredMessage="#{bundle.EditGradeRequiredMessage_idGradescale}">
+                        <f:selectItems value="#{gradescaleController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="#{bundle.EditGradeLabel_idStudent}" for="idStudent" />
+                    <h:selectOneMenu id="idStudent" value="#{gradeController.selected.idStudent}" title="#{bundle.EditGradeTitle_idStudent}" required="true" requiredMessage="#{bundle.EditGradeRequiredMessage_idStudent}">
+                        <f:selectItems value="#{studentController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="#{bundle.EditGradeLabel_idSubject}" for="idSubject" />
+                    <h:selectOneMenu id="idSubject" value="#{gradeController.selected.idSubject}" title="#{bundle.EditGradeTitle_idSubject}" required="true" requiredMessage="#{bundle.EditGradeRequiredMessage_idSubject}">
+                        <f:selectItems value="#{subjectController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                </h:panelGrid>
+                <h:commandLink action="#{gradeController.update}" value="#{bundle.EditGradeSaveLink}"/>
+                <br />
+                <br />
+                <h:link outcome="View" value="#{bundle.EditGradeViewLink}"/>
+                <br />
+                <h:commandLink action="#{gradeController.prepareList}" value="#{bundle.EditGradeShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.EditGradeIndexLink}" />
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

@@ -1,0 +1,50 @@
+ SELECT * FROM GRADESCALE;
+-- -- CREATE TABLE Student(
+-- --     id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY,
+-- --     Name varchar(30) NOT NULL,
+-- --     Surname varchar(30) NOT NULL,
+-- --     PRIMARY KEY(id)
+-- -- );
+-- 
+-- -- CREATE TABLE Subject (
+-- --     id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY,
+-- --     Name varchar(30) NOT NULL,
+-- --     PRIMARY KEY(id)
+-- -- );
+-- --  
+-- -- CREATE TABLE GradeScale (
+-- --     id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY,
+-- --     Name varchar(30) NOT NULL,
+-- --     Value INTEGER NOT NULL,
+-- --     PRIMARY KEY(id)
+-- -- );
+-- -- 
+-- CREATE TABLE Grade (
+--     id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY,
+--     Date DATE NOT NULL,
+-- 
+--     id_student INTEGER NOT NULL,
+-- 
+--     id_subject INTEGER NOT NULL,
+--     id_gradescale INTEGER NOT NULL,
+-- 
+-- 
+--     FOREIGN KEY (id_student) REFERENCES Student(id),
+--     FOREIGN KEY (id_subject) REFERENCES Subject(id),
+--     FOREIGN KEY (id_gradescale) REFERENCES GradeScale(id),
+-- 
+-- 
+--     PRIMARY KEY(id)
+-- );
+-- -- 
+-- -- SELECT * FROM GRADESCALE;
+-- -- SELECT * FROM STUDENT;
+-- -- SELECT * FROM SUBJECT;
+-- -- SELECT * FROM GRADE;
+
+
+CREATE TABLE Users( 
+uid INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY,
+uname VARCHAR(60) NOT NULL, 
+password VARCHAR(60) NOT NULL, 
+PRIMARY KEY(uid));
