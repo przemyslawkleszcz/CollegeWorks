@@ -1,0 +1,6 @@
+kawa 50
+herbata 60
+mleko 30
+artykuly 12
+obiad 11
+papier 1
