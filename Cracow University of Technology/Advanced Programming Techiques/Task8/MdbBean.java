@@ -1,4 +1,3 @@
-
 import java.util.Locale;
 import javax.ejb.ActivationConfigProperty;
 import javax.ejb.MessageDriven;
@@ -167,16 +166,15 @@ public class MdbBean implements MessageListener {
     }
 
     private String register() {
-        return "asd";
-        // try {
-        //     pl.jrj.mdb.IMdbManager man = (IMdbManager) new InitialContext()
-        //             .lookup("java:global/mdb-project"
-        //                     + "/MdbManager!pl.jrj.mdb.IMdbManager");
-        //     return man.sessionId("124624");
-        // } catch (NamingException e) {
-        //     e.printStackTrace();
-        // }
+        try {
+            pl.jrj.mdb.IMdbManager man = (IMdbManager) new InitialContext()
+                    .lookup("java:global/mdb-project"
+                            + "/MdbManager!pl.jrj.mdb.IMdbManager");
+            return man.sessionId("124624");
+        } catch (NamingException e) {
+            e.printStackTrace();
+        }
 
-        // return null;
+        return null;
     }
 }
