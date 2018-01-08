@@ -17,3 +17,18 @@ C:\Users\egemen\documents\visual studio 2015\Projects\EDFScheduling\EDFSchedulin
 C:\Users\egemen\Desktop\EDFScheduling\EDFCode\EDFScheduling\bin\Debug\EDFScheduling.exe.config
 C:\Users\egemen\Desktop\EDFScheduling\EDFCode\EDFScheduling\obj\Debug\EDFScheduling.exe
 C:\Users\egemen\Desktop\EDFScheduling\EDFCode\EDFScheduling\obj\Debug\EDFScheduling.pdb
+D:\Projects\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\bin\Debug\EDFScheduling.exe.config
+D:\Projects\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\bin\Debug\EDFScheduling.exe
+D:\Projects\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\bin\Debug\EDFScheduling.pdb
+D:\Projects\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Debug\MainWindow.g.cs
+D:\Projects\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Debug\ProcessInput.g.cs
+D:\Projects\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Debug\App.g.cs
+D:\Projects\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Debug\EDFScheduling_MarkupCompile.cache
+D:\Projects\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Debug\EDFScheduling_MarkupCompile.lref
+D:\Projects\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Debug\MainWindow.baml
+D:\Projects\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Debug\ProcessInput.baml
+D:\Projects\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Debug\EDFScheduling.g.resources
+D:\Projects\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Debug\EDFScheduling.Properties.Resources.resources
+D:\Projects\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Debug\EDFScheduling.csproj.GenerateResource.Cache
+D:\Projects\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Debug\EDFScheduling.exe
+D:\Projects\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Debug\EDFScheduling.pdb

@@ -22,11 +22,11 @@ namespace EDFScheduling
     public partial class MainWindow : Window
     {
         List<PeriodicProcess> processes;
-        List<Tuple<int, int>> BurstPeriodTimes;
+        List<SingleProcess> BurstPeriodTimes;
 
         // Main Window constructor
 
-        public MainWindow(List<Tuple<int, int>> bpt)
+        public MainWindow(List<SingleProcess> bpt)
         {
             InitializeComponent();
 
@@ -48,7 +48,7 @@ namespace EDFScheduling
         {
             for (int i = 0; i < BurstPeriodTimes.Count; i++)
             {
-                PeriodicProcess pp = new PeriodicProcess(BurstPeriodTimes[i].Item1, BurstPeriodTimes[i].Item2);
+                PeriodicProcess pp = new PeriodicProcess(BurstPeriodTimes[i].ExecutionTime, BurstPeriodTimes[i].Period);
                 processes.Add(pp);
             }
 

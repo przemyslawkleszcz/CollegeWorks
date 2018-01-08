@@ -20,13 +20,13 @@ namespace EDFScheduling
     /// </summary>
     public partial class ProcessInput : Window
     {
-        List<Tuple<int, int>> processes;
+        List<SingleProcess> processes;
         UIBindClass uiClass;
 
         public ProcessInput()
         {
             InitializeComponent();
-            processes = new List<Tuple<int, int>>();
+            processes = new List<SingleProcess>();
 
             uiClass = new UIBindClass();
             DataContext = uiClass;
@@ -45,8 +45,7 @@ namespace EDFScheduling
                 bt = Convert.ToInt32(burstTime.Text);
                 pt = Convert.ToInt32(periodTime.Text);
 
-                Tuple<int, int> processInfo = new Tuple<int, int>(bt, pt);
-
+                var processInfo = new SingleProcess(bt, pt);
                 if (bt <= pt && bt > 0 && pt > 0)
                 {
 
@@ -90,9 +89,9 @@ namespace EDFScheduling
             }
         }
 
-        private void AddProcessToCB(Tuple<int, int> ProcessInfo)
+        private void AddProcessToCB(SingleProcess ProcessInfo)
         {
-            var cbItem = new ComboBoxItem { Content = "BT:" + ProcessInfo.Item1 + "\tPT:" + ProcessInfo.Item2, DataContext = ProcessInfo, Tag = ProcessInfo };
+            var cbItem = new ComboBoxItem { Content = "BT:" + ProcessInfo.ExecutionTime + "\tPT:" + ProcessInfo.Period, DataContext = ProcessInfo, Tag = ProcessInfo };
 
             //var cbItem = new ListItem("BT:" + ProcessInfo.Item1 + "\tPT:" + ProcessInfo.Item2, ProcessInfo);
             comboBox.Items.Add(cbItem);
@@ -108,7 +107,7 @@ namespace EDFScheduling
 
                 ComboBoxItem selectionItem = (ComboBoxItem)comboBox.Items.GetItemAt(comboBox.SelectedIndex);
 
-                processes.Remove((Tuple<int, int>)selectionItem.Tag);
+                processes.Remove((SingleProcess)selectionItem.Tag);
                 comboBox.SelectedItem = dummyItem;
                 comboBox.Items.Remove(selectionItem);
 
@@ -122,13 +121,15 @@ namespace EDFScheduling
         private void UpdateUtilizationLabel()
         {
             double total = 0;
-            double utilization;
+            //double utilization;
 
-            for (int i = 0; i < processes.Count; i++)
-            {
-                total += (double)processes[i].Item1 / processes[i].Item2; // executiontime divided by period
-            }
-            utilization = total * 100f;
+            //for (int i = 0; i < processes.Count; i++)
+            //{
+            //    total += (double)processes[i].ExecutionTime / processes[i].Period; // executiontime divided by period
+            //}
+            //utilization = total * 100f;
+
+            double utilization = Utils.CalculateUtilization(processes);
 
             lblUtilization.Content = "Utilization: " + utilization.ToString("0.00") + " %";
             if (utilization > 100)
@@ -167,7 +168,11 @@ namespace EDFScheduling
 
         private void btnDone_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow(processes);
+            var l = new List<SingleProcess>();
+            foreach (var process in processes)
+                l.Add(new SingleProcess(process.ExecutionTime, process.Period));
+
+            MainWindow main = new MainWindow(l);
             main.Show();
             this.Close();
         }

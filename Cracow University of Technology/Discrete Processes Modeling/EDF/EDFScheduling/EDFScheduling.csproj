@@ -62,7 +62,9 @@
     <Compile Include="ProcessInput.xaml.cs">
       <DependentUpon>ProcessInput.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SingleProcess.cs" />
     <Compile Include="UIManager.cs" />
+    <Compile Include="Utils.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

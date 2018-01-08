@@ -7,15 +7,15 @@ using System.Windows.Media;
 
 namespace EDFScheduling
 {
-   public class PeriodicProcess
+   public class PeriodicProcess : SingleProcess
     {
         static public int ProcessCount = 0;
 
         public Color color;
         
         public int Number;
-        public int Period;
-        public int ExecutionTime;
+        
+        
         public bool CanProcess;
         public int DeadlineStep;
 

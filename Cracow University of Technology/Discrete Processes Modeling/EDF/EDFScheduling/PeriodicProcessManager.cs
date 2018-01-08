@@ -1,37 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EDFScheduling
 {
     class PeriodicProcessManager
     {
-        UIManager UIMgr;
+        private readonly UIManager _uiMgr;
+        private readonly List<PeriodicProcess> _processes;
+        private readonly int _leastCommonMultiple;
+        private int _cpRemaining; //Current Process Remaining Steps
+        private PeriodicProcess _currentProcess;
+        
 
-        List<PeriodicProcess> Processes;
-
-        int LeastCommonMultiple;
-        float Utilization;
-
-        PeriodicProcess CurrentProcess = null;
-        int CPRemaining = 0; //Current Process Remaining Steps
-
-        public PeriodicProcessManager(List<PeriodicProcess> _processes)
+        public PeriodicProcessManager(List<PeriodicProcess> processes)
         {
-            Processes = _processes;
-            Utilization = CalculateUtilization();
+            this._processes = processes;
+            var utilization = Utils.CalculateUtilization(_processes);
 
             //if (Utilization > 100)
             //{
             //    throw new ArgumentException(String.Format("The system cannot be scheduled with EDF. {0}% > 100%", Utilization), "Utilization");
             //}
 
-            LeastCommonMultiple = CalculateLCM();   //Calculate Least Common Multiple
+            _leastCommonMultiple = Utils.CalculateLCM(_processes);
 
-            UIMgr = new UIManager(Processes.Count, LeastCommonMultiple, Utilization); //Initializing UI Manager 
-            UIMgr.AddToUI(Processes, Utilization);
+            _uiMgr = new UIManager(this._processes.Count, _leastCommonMultiple, utilization); //Initializing UI Manager 
+            _uiMgr.AddToUI(this._processes, utilization);
         }
 
         public void ScheduleTasks()
@@ -40,51 +34,43 @@ namespace EDFScheduling
             int ProcessIndex = 0;
             List<PeriodicProcess> ProcessQueue = new List<PeriodicProcess>();
 
-            while (step < LeastCommonMultiple)
+            while (step < _leastCommonMultiple)
             {
 
-                if (CPRemaining == 1) //Current Process has been finished
-                {
-                    CurrentProcess = null;
-                }
+                if (_cpRemaining == 1) //Current Process has been finished
+                    _currentProcess = null;
 
-                if (CurrentProcess != null) //If there is a process running, Decrease remaining steps
-                {
-                    CPRemaining -= 1;
-                }
+                if (_currentProcess != null) //If there is a process running, Decrease remaining steps
+                    _cpRemaining -= 1;
 
                 else // If it is free, run a process
                 {
-                    for (int i = 0; i < Processes.Count; i++)
+                    foreach (var process in _processes)
                     {
-                        if (step >= Processes[i].DeadlineStep)
+                        if (step >= process.DeadlineStep)
                         {
-                            Processes[i].CanProcess = true;
-                            Processes[i].NextDeadline();
+                            process.CanProcess = true;
+                            process.NextDeadline();
                         }
 
-                        if (Processes[i].CanProcess)
-                        {
-                            ProcessQueue.Add(Processes[i]);
-                        }
+                        if (process.CanProcess)
+                            ProcessQueue.Add(process);
                     }
                     if (ProcessQueue.Count > 0)
                     {
                         ProcessIndex = PickProcess(ProcessQueue);
-                        CurrentProcess = Processes.Find(o => o.Number == ProcessQueue[ProcessIndex].Number);
-                        CPRemaining = RunProcess(CurrentProcess);
-                        Console.WriteLine("Index: " + (CurrentProcess.Number + 1) + " on step " + step);
+                        _currentProcess = _processes.Find(o => o.Number == ProcessQueue[ProcessIndex].Number);
+                        _cpRemaining = RunProcess(_currentProcess);
+                        Console.WriteLine("Index: " + (_currentProcess.Number + 1) + " on step " + step);
                     }
                     else
-                    {
                         Console.WriteLine("No process executed on step " + step);
-                    }
                 }
                 
-                if (CurrentProcess != null)
-                    UIMgr.DrawRect(CurrentProcess.Number, CurrentProcess.color, step);
+                if (_currentProcess != null)
+                    _uiMgr.DrawRect(_currentProcess.Number, _currentProcess.color, step);
 
-                UIMgr.DrawStepLabel(step);
+                _uiMgr.DrawStepLabel(step);
 
                 ++step;
                 ProcessQueue.Clear();
@@ -93,9 +79,9 @@ namespace EDFScheduling
 
         int PickProcess(List<PeriodicProcess> processQueue)
         {
-            int minPeriod = processQueue[0].Period;
-            int minIndex = 0;
-            for (int i = 0; i < processQueue.Count; i++)
+            var minPeriod = processQueue[0].Period;
+            var minIndex = 0;
+            for (var i = 0; i < processQueue.Count; i++)
             {
                 if (processQueue[i].Period < minPeriod)
                 {
@@ -112,42 +98,6 @@ namespace EDFScheduling
             _process.CanProcess = false;
             return _process.ExecutionTime;
         }
-
-
-        //  Helper Functions
-
-        private float CalculateUtilization()
-        {
-            float total = 0;
-
-            for (int i = 0; i < Processes.Count; i++)
-            {
-                total += (float)Processes[i].ExecutionTime / Processes[i].Period;
-            }
-            return total * 100f;
-        }
-
-        private int CalculateLCM()
-        {
-            int GCD = 1;
-            int LCM = 1;
-            int currentPeriod;
-            for (int i = 0; i < Processes.Count; i++)
-            {
-                currentPeriod = Processes[i].Period;
-
-                GCD = CalculateGCD(LCM, currentPeriod);
-                LCM = LCM * currentPeriod / GCD;
-            }
-
-            return LCM;
-        }
-
-        static private int CalculateGCD(int a, int b)
-        {
-            return b == 0 ? a : CalculateGCD(b, a % b);
-        }
-
     }
 }
 
