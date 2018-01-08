@@ -14,7 +14,7 @@ namespace EDFScheduling
 
         public PeriodicProcessManager(List<PeriodicProcess> processes)
         {
-            this._processes = processes;
+            _processes = processes;
             var utilization = Utils.CalculateUtilization(_processes);
 
             //if (Utilization > 100)
@@ -24,15 +24,15 @@ namespace EDFScheduling
 
             _leastCommonMultiple = Utils.CalculateLCM(_processes);
 
-            _uiMgr = new UIManager(this._processes.Count, _leastCommonMultiple, utilization); //Initializing UI Manager 
-            _uiMgr.AddToUI(this._processes, utilization);
+            _uiMgr = new UIManager(this._processes.Count, _leastCommonMultiple); //Initializing UI Manager 
+            _uiMgr.AddToUI(_processes, utilization);
         }
 
         public void ScheduleTasks()
         {
-            int step = 0;
-            int ProcessIndex = 0;
-            List<PeriodicProcess> ProcessQueue = new List<PeriodicProcess>();
+            var step = 0;
+            int processIndex;
+            var processQueue = new List<PeriodicProcess>();
 
             while (step < _leastCommonMultiple)
             {
@@ -54,12 +54,12 @@ namespace EDFScheduling
                         }
 
                         if (process.CanProcess)
-                            ProcessQueue.Add(process);
+                            processQueue.Add(process);
                     }
-                    if (ProcessQueue.Count > 0)
+                    if (processQueue.Count > 0)
                     {
-                        ProcessIndex = PickProcess(ProcessQueue);
-                        _currentProcess = _processes.Find(o => o.Number == ProcessQueue[ProcessIndex].Number);
+                        processIndex = PickProcess(processQueue);
+                        _currentProcess = _processes.Find(o => o.Number == processQueue[processIndex].Number);
                         _cpRemaining = RunProcess(_currentProcess);
                         Console.WriteLine("Index: " + (_currentProcess.Number + 1) + " on step " + step);
                     }
@@ -68,12 +68,12 @@ namespace EDFScheduling
                 }
                 
                 if (_currentProcess != null)
-                    _uiMgr.DrawRect(_currentProcess.Number, _currentProcess.color, step);
+                    _uiMgr.DrawRect(_currentProcess.Number, _currentProcess.Color, step);
 
                 _uiMgr.DrawStepLabel(step);
 
                 ++step;
-                ProcessQueue.Clear();
+                processQueue.Clear();
             }
         }
 

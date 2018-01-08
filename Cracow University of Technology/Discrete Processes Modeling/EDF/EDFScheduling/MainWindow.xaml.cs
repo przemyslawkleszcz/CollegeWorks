@@ -1,18 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace EDFScheduling
 {
@@ -21,42 +12,40 @@ namespace EDFScheduling
     /// </summary>
     public partial class MainWindow : Window
     {
-        List<PeriodicProcess> processes;
-        List<SingleProcess> BurstPeriodTimes;
-
-        // Main Window constructor
+        public readonly List<SingleProcess> _burstPeriodTimes;
+        private readonly List<PeriodicProcess> _processes;
 
         public MainWindow(List<SingleProcess> bpt)
         {
             InitializeComponent();
 
-            BurstPeriodTimes = bpt;
-            processes = new List<PeriodicProcess>();
+            _burstPeriodTimes = bpt;
+            _processes = new List<PeriodicProcess>();
 
-            System.Windows.Application.Current.MainWindow = this;
+            Application.Current.MainWindow = this;
         }
 
         //  This is initiated when the window is loaded
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             GenerateAndRun();
-            Console.WriteLine((MainWindow)System.Windows.Application.Current.MainWindow);
-
+            Console.WriteLine((MainWindow)Application.Current.MainWindow);
         }
 
         public void GenerateAndRun()
         {
-            for (int i = 0; i < BurstPeriodTimes.Count; i++)
+            foreach (var t in _burstPeriodTimes)
             {
-                PeriodicProcess pp = new PeriodicProcess(BurstPeriodTimes[i].ExecutionTime, BurstPeriodTimes[i].Period);
-                processes.Add(pp);
+                var pp = new PeriodicProcess(t.ExecutionTime, t.Period);
+                _processes.Add(pp);
             }
 
             //  Generating the process manager, giving the list as the parameter
+
             try
             {
-                PeriodicProcessManager ProcessMgr = new PeriodicProcessManager(processes);
-                ProcessMgr.ScheduleTasks();
+                var processMgr = new PeriodicProcessManager(_processes);
+                processMgr.ScheduleTasks();
             }
             catch (Exception ex)
             {
@@ -67,7 +56,7 @@ namespace EDFScheduling
         // Editing the Dropdown and the Utilization Label
         public void AddInfoToWindow(List<PeriodicProcess> _p, float Utilization)
         {
-            UIBindClass uiClass = new UIBindClass();
+            var uiClass = new UIBindClass();
             DataContext = uiClass;
             uiClass.cbItems = new ObservableCollection<ComboBoxItem>();
 
@@ -75,14 +64,13 @@ namespace EDFScheduling
 
             uiClass.SelectedcbItem = cbItem;
             uiClass.cbItems.Add(cbItem);
-            for (int i = 0; i < _p.Count; i++)
+            foreach (var t in _p)
             {
-                cbItem = new ComboBoxItem { IsHitTestVisible = false, Content = "P" + (_p[i].Number + 1) + "\t" + (_p[i].ExecutionTime) + "\t" + (_p[i].Period), Background = new SolidColorBrush(_p[i].color) };
+                cbItem = new ComboBoxItem { IsHitTestVisible = false, Content = "P" + (t.Number + 1) + "\t" + t.ExecutionTime + "\t" + (t.Period), Background = new SolidColorBrush(t.Color) };
                 uiClass.cbItems.Add(cbItem);
             }
-            uiClass.lblUtil = new Label();
-            uiClass.lblUtil.Content = "Utilization: " + Utilization.ToString("0.00") + "%";
-        }
 
+            uiClass.LblUtil = new Label {Content = "Utilization: " + Utilization.ToString("0.00") + "%"};
+        }
     }
 }

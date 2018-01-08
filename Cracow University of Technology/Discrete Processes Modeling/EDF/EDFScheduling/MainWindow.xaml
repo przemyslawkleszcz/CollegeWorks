@@ -11,7 +11,7 @@
         <Label x:Name="lblProcesses" Content="Periodic Processes" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Center" FontSize="25" FontFamily="Century Gothic"/>
 
         <ComboBox x:Name="processCombo" ItemsSource="{Binding cbItems}" SelectedItem="{Binding SelectedcbItem}" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Width="150" Height="25"/>
-        <Label x:Name="lblUtilization" Content ="{Binding lblUtil}" HorizontalAlignment="Center" Margin="0, 0, 0, 0" VerticalAlignment="Center" FontFamily="Century Gothic" FontSize="25"/>
+        <Label x:Name="lblUtilization" Content ="{Binding LblUtil}" HorizontalAlignment="Center" Margin="0, 0, 0, 0" VerticalAlignment="Center" FontFamily="Century Gothic" FontSize="25"/>
 
         <Grid Name="OuterGrid" Height="300" Margin="0,0,-0.4,0">
 

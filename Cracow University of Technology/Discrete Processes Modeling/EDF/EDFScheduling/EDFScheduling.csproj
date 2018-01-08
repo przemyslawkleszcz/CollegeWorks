@@ -63,6 +63,7 @@
       <DependentUpon>ProcessInput.xaml</DependentUpon>
     </Compile>
     <Compile Include="SingleProcess.cs" />
+    <Compile Include="UIBindClass.cs" />
     <Compile Include="UIManager.cs" />
     <Compile Include="Utils.cs" />
     <Page Include="MainWindow.xaml">

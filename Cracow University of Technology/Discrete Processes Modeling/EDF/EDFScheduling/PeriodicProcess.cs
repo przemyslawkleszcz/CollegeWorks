@@ -1,21 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Media;
 
 namespace EDFScheduling
 {
    public class PeriodicProcess : SingleProcess
     {
-        static public int ProcessCount = 0;
-
-        public Color color;
-        
+        public static int ProcessCount;
+        public Color Color;
         public int Number;
-        
-        
         public bool CanProcess;
         public int DeadlineStep;
 
@@ -26,9 +18,7 @@ namespace EDFScheduling
             ExecutionTime = _executionTime;
             Period = _period;
             DeadlineStep = Period;
-
-            color = GenerateRndColor();
-
+            Color = GenerateRndColor();
             ProcessCount = ProcessCount + 1;
         }
 
@@ -39,19 +29,16 @@ namespace EDFScheduling
 
         Color GenerateRndColor()
         {
-            Random r = new Random(Number*3);
-            Color randomColor = new Color();
-            randomColor.A = 255; //alpha channel of the color
-            randomColor.R = (byte)r.Next(0, 255); //red channel
-            randomColor.G = (byte)r.Next(0, 255); //green channel
-            randomColor.B = (byte)r.Next(0, 255); //blue channel
+            var r = new Random(Number*3);
+            var randomColor = new Color
+            {
+                A = 255, //alpha channel of the color
+                R = (byte) r.Next(0, 255),
+                G = (byte) r.Next(0, 255),
+                B = (byte) r.Next(0, 255)
+            };
 
             return randomColor;
         }
-
-        //~PeriodicProcess()
-        //{
-        //    ProcessCount = ProcessCount - 1;
-        //}
     }
 }

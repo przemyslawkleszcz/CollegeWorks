@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EDFScheduling
+﻿namespace EDFScheduling
 {
     public struct Fraction
     {
@@ -16,8 +10,8 @@ namespace EDFScheduling
         /// </summary>
         public Fraction(int numerator, int denominator)
         {
-            this.Numerator = numerator;
-            this.Denominator = denominator;
+            Numerator = numerator;
+            Denominator = denominator;
         }
 
         /// <summary>
@@ -34,7 +28,7 @@ namespace EDFScheduling
         /// </summary>
         public double ToDouble(int decimalPlaces)
         {
-            if (this.Denominator == 0)
+            if (Denominator == 0)
                 return double.NaN;
 
             return System.Math.Round(
@@ -52,16 +46,14 @@ namespace EDFScheduling
         {
             const double EPSILON = .000001d;
 
-            int n = 1;  // numerator
-            int d = 1;  // denominator
+            var n = 1;  // numerator
+            var d = 1;  // denominator
             double fraction = n / d;
 
             while (System.Math.Abs(fraction - value) > EPSILON)
             {
                 if (fraction < value)
-                {
                     n++;
-                }
                 else
                 {
                     d++;
