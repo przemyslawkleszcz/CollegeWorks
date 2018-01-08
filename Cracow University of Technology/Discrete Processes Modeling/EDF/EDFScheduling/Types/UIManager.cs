@@ -15,9 +15,9 @@ namespace EDFScheduling.Types
         private readonly int _columnCount;
         private readonly Grid _innerGrid1;
 
-        public UiManager(int processCount, int lcm)
+        public UiManager(int taskCount, int lcm)
         {
-            _rowCount = processCount;
+            _rowCount = taskCount;
             _columnCount = lcm;
 
             var mainWindow = (UI.MainWindow)Application.Current.MainWindow;
@@ -58,9 +58,9 @@ namespace EDFScheduling.Types
             _innerGrid1.Children.Add(label);
         }
 
-        public void AddToUi(List<PeriodicTask> _processes, float LCM)
+        public void AddToUi(List<PeriodicTask> tasks, float LCM)
         {
-            ((UI.MainWindow)Application.Current.MainWindow)?.AddInfoToWindow(_processes, LCM);
+            ((UI.MainWindow)Application.Current.MainWindow)?.AddInfoToWindow(tasks, LCM);
         }
     }
 }

@@ -47,3 +47,4 @@ I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Discre
 I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Debug\EDFScheduling.csproj.CoreCompileInputs.cache
 I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Debug\EDFScheduling.exe
 I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Debug\EDFScheduling.pdb
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Debug\EDFScheduling.csprojResolveAssemblyReference.cache

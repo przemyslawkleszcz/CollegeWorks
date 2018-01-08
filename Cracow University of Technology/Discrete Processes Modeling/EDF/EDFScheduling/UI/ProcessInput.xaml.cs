@@ -33,11 +33,11 @@ namespace EDFScheduling.UI
                 var execution = Convert.ToInt32(TbExecutionTime.Text);
                 var period = Convert.ToInt32(TbPeriodTime.Text);
 
-                var processInfo = new Task(execution, period);
+                var taskInfo = new Task(execution, period);
                 if (execution <= period && execution > 0 && period > 0)
                 {
-                    _tasks.Add(processInfo);
-                    AddTaskToComboBox(processInfo);
+                    _tasks.Add(taskInfo);
+                    AddTaskToComboBox(taskInfo);
                     TbExecutionTime.Text = "";
                     TbPeriodTime.Text = "";
                     var color = Color.FromRgb(221, 221, 221);
@@ -45,7 +45,7 @@ namespace EDFScheduling.UI
                     TbPeriodTime.Background = new SolidColorBrush(color);
                     BtnAdd.Background = new SolidColorBrush(color);
                     UpdateUtilizationLabel();
-                    CheckProcessCount();
+                    CheckTaskCount();
                 }
                 else
                     ShowError("Czas wykonania nie może być większy od okresu.");
@@ -74,11 +74,11 @@ namespace EDFScheduling.UI
             var removedItemInfo = (Task)selectionItem.Tag;
             var message = "Pomyślnie usunięto: " + removedItemInfo.ExecutionTime + " " + removedItemInfo.Period;
             Console.WriteLine(message);
-            CheckProcessCount();
+            CheckTaskCount();
             UpdateUtilizationLabel();
         }
 
-        private void CheckProcessCount()
+        private void CheckTaskCount()
         {
             LblLimit.Content = "";
             if (_tasks.Count >= 10)
@@ -93,9 +93,9 @@ namespace EDFScheduling.UI
             }
         }
 
-        private void AddTaskToComboBox(Task processInfo)
+        private void AddTaskToComboBox(Task taskInfo)
         {
-            var cbItem = new ComboBoxItem { Content = "Wykonanie: " + processInfo.ExecutionTime + "\tOkres: " + processInfo.Period, DataContext = processInfo, Tag = processInfo };
+            var cbItem = new ComboBoxItem { Content = "Wykonanie: " + taskInfo.ExecutionTime + "\tOkres: " + taskInfo.Period, DataContext = taskInfo, Tag = taskInfo };
             ComboBox.Items.Add(cbItem);
             Canvas.UpdateLayout();
         }

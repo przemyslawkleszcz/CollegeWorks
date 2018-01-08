@@ -6,81 +6,80 @@ namespace EDFScheduling.Types
     public class PeriodicTaskManager
     {
         private readonly UiManager _uiMgr;
-        private readonly List<PeriodicTask> _processes;
+        private readonly List<PeriodicTask> _tasks;
         private readonly int _leastCommonMultiple;
         private int _cpRemaining; //Current Process Remaining Steps
-        private PeriodicTask _currentProcess;
+        private PeriodicTask _currentTask;
         
 
-        public PeriodicTaskManager(List<PeriodicTask> processes)
+        public PeriodicTaskManager(List<PeriodicTask> tasks)
         {
-            _processes = processes;
-            var utilization = Utils.CalculateUtilization(_processes);
+            _tasks = tasks;
+            var utilization = Utils.CalculateUtilization(_tasks);
 
-            _leastCommonMultiple = Utils.CalculateLcm(_processes);
+            _leastCommonMultiple = Utils.CalculateLcm(_tasks);
 
-            _uiMgr = new UiManager(this._processes.Count, _leastCommonMultiple); //Initializing UI Manager 
-            _uiMgr.AddToUi(_processes, utilization);
+            _uiMgr = new UiManager(this._tasks.Count, _leastCommonMultiple); //Initializing UI Manager 
+            _uiMgr.AddToUi(_tasks, utilization);
         }
 
         public void ScheduleTasks()
         {
             var step = 0;
-            int processIndex;
-            var processQueue = new List<PeriodicTask>();
+            int taskIndex;
+            var taskQueue = new List<PeriodicTask>();
 
             while (step < _leastCommonMultiple)
             {
-
                 if (_cpRemaining == 1) //Current Process has been finished
-                    _currentProcess = null;
+                    _currentTask = null;
 
-                if (_currentProcess != null) //If there is a process running, Decrease remaining steps
+                if (_currentTask != null) //If there is a process running, Decrease remaining steps
                     _cpRemaining -= 1;
 
                 else // If it is free, run a process
                 {
-                    foreach (var process in _processes)
+                    foreach (var task in _tasks)
                     {
-                        if (step >= process.DeadlineStep)
+                        if (step >= task.DeadlineStep)
                         {
-                            process.CanProcess = true;
-                            process.NextDeadline();
+                            task.CanProcess = true;
+                            task.NextDeadline();
                         }
 
-                        if (process.CanProcess)
-                            processQueue.Add(process);
+                        if (task.CanProcess)
+                            taskQueue.Add(task);
                     }
-                    if (processQueue.Count > 0)
+                    if (taskQueue.Count > 0)
                     {
-                        processIndex = PickProcess(processQueue);
-                        _currentProcess = _processes.Find(o => o.Number == processQueue[processIndex].Number);
-                        _cpRemaining = RunProcess(_currentProcess);
-                        Console.WriteLine("Index: " + (_currentProcess.Number + 1) + " on step " + step);
+                        taskIndex = GetMinPeriodTaskIndex(taskQueue);
+                        _currentTask = _tasks.Find(o => o.Number == taskQueue[taskIndex].Number);
+                        _cpRemaining = RunTask(_currentTask);
+                        Console.WriteLine("Index: " + (_currentTask.Number + 1) + " on step " + step);
                     }
                     else
                         Console.WriteLine("No process executed on step " + step);
                 }
                 
-                if (_currentProcess != null)
-                    _uiMgr.DrawRect(_currentProcess.Number, _currentProcess.Color, step);
+                if (_currentTask != null)
+                    _uiMgr.DrawRect(_currentTask.Number, _currentTask.Color, step);
 
                 _uiMgr.DrawStepLabel(step);
 
                 ++step;
-                processQueue.Clear();
+                taskQueue.Clear();
             }
         }
 
-        int PickProcess(List<PeriodicTask> processQueue)
+        private int GetMinPeriodTaskIndex(List<PeriodicTask> taskQueue)
         {
-            var minPeriod = processQueue[0].Period;
+            var minPeriod = taskQueue[0].Period;
             var minIndex = 0;
-            for (var i = 0; i < processQueue.Count; i++)
+            for (var i = 0; i < taskQueue.Count; i++)
             {
-                if (processQueue[i].Period < minPeriod)
+                if (taskQueue[i].Period < minPeriod)
                 {
-                    minPeriod = processQueue[i].Period;
+                    minPeriod = taskQueue[i].Period;
                     minIndex = i;
                 }
             }
@@ -88,10 +87,10 @@ namespace EDFScheduling.Types
             return minIndex;
         }
 
-        int RunProcess(PeriodicTask process)
+        int RunTask(PeriodicTask task)
         {
-            process.CanProcess = false;
-            return process.ExecutionTime;
+            task.CanProcess = false;
+            return task.ExecutionTime;
         }
     }
 }

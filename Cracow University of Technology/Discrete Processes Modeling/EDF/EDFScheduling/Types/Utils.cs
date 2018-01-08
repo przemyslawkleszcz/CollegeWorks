@@ -5,22 +5,22 @@ namespace EDFScheduling.Types
 {
     public class Utils
     {
-        public static float CalculateUtilization(IEnumerable<Task> processes)
+        public static float CalculateUtilization(IEnumerable<Task> tasks)
         {
-            var total = processes.Sum(t => (float) t.ExecutionTime / t.Period);
+            var total = tasks.Sum(t => (float) t.ExecutionTime / t.Period);
             return total * 100f;
         }
 
         /// <summary>
         /// Calculates Least Common Multiple
         /// </summary>
-        /// <param name="processes"></param>
+        /// <param name="tasks"></param>
         /// <returns></returns>
-        public static int CalculateLcm(List<PeriodicTask> processes)
+        public static int CalculateLcm(List<PeriodicTask> tasks)
         {
             var lcm = 1;
 
-            foreach (var t in processes)
+            foreach (var t in tasks)
             {
                 var currentPeriod = t.Period;
                 var gcd = CalculateGcd(lcm, currentPeriod);
