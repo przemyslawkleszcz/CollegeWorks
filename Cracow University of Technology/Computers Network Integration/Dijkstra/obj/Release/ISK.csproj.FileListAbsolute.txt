@@ -1,0 +1,49 @@
+G:\Projekty\PKISK\PKISK\ISK\bin\Release\ISK.exe.config
+G:\Projekty\PKISK\PKISK\ISK\bin\Release\ISK.exe
+G:\Projekty\PKISK\PKISK\ISK\bin\Release\ISK.pdb
+G:\Projekty\PKISK\PKISK\ISK\bin\Release\GraphX.PCL.Common.dll
+G:\Projekty\PKISK\PKISK\ISK\bin\Release\GraphX.PCL.Logic.dll
+G:\Projekty\PKISK\PKISK\ISK\bin\Release\GraphX.WPF.Controls.dll
+G:\Projekty\PKISK\PKISK\ISK\bin\Release\QuickGraph.Data.dll
+G:\Projekty\PKISK\PKISK\ISK\bin\Release\QuickGraph.dll
+G:\Projekty\PKISK\PKISK\ISK\bin\Release\QuickGraph.Graphviz.dll
+G:\Projekty\PKISK\PKISK\ISK\bin\Release\QuickGraph.Serialization.dll
+G:\Projekty\PKISK\PKISK\ISK\bin\Release\QuickGraph.xml
+G:\Projekty\PKISK\PKISK\ISK\bin\Release\QuickGraph.Data.xml
+G:\Projekty\PKISK\PKISK\ISK\bin\Release\QuickGraph.Graphviz.xml
+G:\Projekty\PKISK\PKISK\ISK\bin\Release\QuickGraph.Serialization.xml
+G:\Projekty\PKISK\PKISK\ISK\obj\Release\MainWindow.g.cs
+G:\Projekty\PKISK\PKISK\ISK\obj\Release\App.g.cs
+G:\Projekty\PKISK\PKISK\ISK\obj\Release\GeneratedInternalTypeHelper.g.cs
+G:\Projekty\PKISK\PKISK\ISK\obj\Release\ISK_MarkupCompile.cache
+G:\Projekty\PKISK\PKISK\ISK\obj\Release\ISK_MarkupCompile.lref
+G:\Projekty\PKISK\PKISK\ISK\obj\Release\MainWindow.baml
+G:\Projekty\PKISK\PKISK\ISK\obj\Release\ISK.g.resources
+G:\Projekty\PKISK\PKISK\ISK\obj\Release\ISK.Properties.Resources.resources
+G:\Projekty\PKISK\PKISK\ISK\obj\Release\ISK.csproj.GenerateResource.Cache
+G:\Projekty\PKISK\PKISK\ISK\obj\Release\ISK.csproj.CoreCompileInputs.cache
+G:\Projekty\PKISK\PKISK\ISK\obj\Release\ISK.exe
+G:\Projekty\PKISK\PKISK\ISK\obj\Release\ISK.pdb
+G:\Projekty\PKISK\PKISK\ISK\obj\Release\ISK.csprojResolveAssemblyReference.cache
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\ComputersNetworkIntegration\Dijkstra\bin\Release\ISK.exe.config
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\ComputersNetworkIntegration\Dijkstra\bin\Release\ISK.exe
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\ComputersNetworkIntegration\Dijkstra\bin\Release\ISK.pdb
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\ComputersNetworkIntegration\Dijkstra\bin\Release\QuickGraph.xml
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\ComputersNetworkIntegration\Dijkstra\bin\Release\QuickGraph.Data.xml
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\ComputersNetworkIntegration\Dijkstra\bin\Release\QuickGraph.Graphviz.xml
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\ComputersNetworkIntegration\Dijkstra\bin\Release\QuickGraph.Serialization.xml
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\ComputersNetworkIntegration\Dijkstra\obj\Release\ISK.csprojResolveAssemblyReference.cache
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\ComputersNetworkIntegration\Dijkstra\obj\Release\UI\Dialog.baml
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\ComputersNetworkIntegration\Dijkstra\obj\Release\UI\Dialog.g.cs
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\ComputersNetworkIntegration\Dijkstra\obj\Release\UI\MainWindow.g.cs
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\ComputersNetworkIntegration\Dijkstra\obj\Release\UI\App.g.cs
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\ComputersNetworkIntegration\Dijkstra\obj\Release\GeneratedInternalTypeHelper.g.cs
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\ComputersNetworkIntegration\Dijkstra\obj\Release\ISK_MarkupCompile.cache
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\ComputersNetworkIntegration\Dijkstra\obj\Release\ISK_MarkupCompile.lref
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\ComputersNetworkIntegration\Dijkstra\obj\Release\UI\MainWindow.baml
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\ComputersNetworkIntegration\Dijkstra\obj\Release\ISK.g.resources
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\ComputersNetworkIntegration\Dijkstra\obj\Release\ISK.Properties.Resources.resources
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\ComputersNetworkIntegration\Dijkstra\obj\Release\ISK.csproj.GenerateResource.Cache
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\ComputersNetworkIntegration\Dijkstra\obj\Release\ISK.csproj.CoreCompileInputs.cache
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\ComputersNetworkIntegration\Dijkstra\obj\Release\ISK.exe
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\ComputersNetworkIntegration\Dijkstra\obj\Release\ISK.pdb

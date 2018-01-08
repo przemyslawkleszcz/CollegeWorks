@@ -1,0 +1,38 @@
+﻿<Window x:Class="EDFScheduling.ProcessInput"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EDFScheduling"
+        mc:Ignorable="d"
+        Title="ProcessInput" Height="300" Width="540.0">
+    <Grid>
+        <Label x:Name="lblAddProcess" Content="Add Processes" HorizontalAlignment="Left" Margin="84,5,69.6,0" VerticalAlignment="Top" Height="32" Width="140" FontSize="20"/>
+        <TextBox x:Name="burstTime" Height="30" Margin="53,89,171.6,151.4" TextWrapping="Wrap" Text="" Width="69" FontSize="20" Background="#FFE2E2E2" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="periodTime" Height="31" Margin="179,88,45.6,151.4" TextWrapping="Wrap" Text="" Width="69" FontSize="20" Background="#FFE2E2E2" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="111,135,0,0" VerticalAlignment="Top" Width="80" Height="32" Click="btnAdd_Click"/>
+        <Label x:Name="lblBurst" Content="Burst Time" HorizontalAlignment="Left" Margin="53,58,0,0" VerticalAlignment="Top" />
+        <Label x:Name="lblPeriod" Content="Period Time" HorizontalAlignment="Left" Margin="174,58,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnDone" Content="Done" HorizontalAlignment="Left" Margin="111,194,0,0" VerticalAlignment="Top" Width="80" Height="50" Background="#FFC4FFA0" Click="btnDone_Click"/>
+        <Separator HorizontalAlignment="Left" Height="100" Margin="160,86,0,0" VerticalAlignment="Top" Width="270" RenderTransformOrigin="0.5,0.5">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+
+        <Canvas Name="canvas" HorizontalAlignment="Left" Height="100" Margin="331,153,0,0" VerticalAlignment="Top" Width="100">
+            <ComboBox  x:Name="comboBox" SelectionChanged="comboBox_SelectionChanged" ItemsSource="{Binding cbItems}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Canvas.Left="8" Canvas.Top="-88"/>
+
+            <Label x:Name="lblDeleteProcess" Content="Delete Processes" HorizontalAlignment="Left" VerticalAlignment="Top" Height="32" Width="160" FontSize="20" Canvas.Left="-9" Canvas.Top="-145"/>
+            <Label x:Name="lblLimit" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="-9"/>
+            <Label x:Name="lblUtilization" Content="" Canvas.Left="-9" Canvas.Top="27"/>
+            <Label x:Name="lblPossibleProcess" Content="" Canvas.Left="-9" Canvas.Top="58"/>
+        </Canvas>
+
+    </Grid>
+</Window>

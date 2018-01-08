@@ -1,0 +1,19 @@
+c:\users\egemen\documents\visual studio 2015\Projects\EDFScheduling\EDFScheduling\bin\Debug\EDFScheduling.exe.config
+C:\Users\egemen\Documents\Visual Studio 2015\Projects\EDFScheduling\EDFScheduling\obj\Debug\EDFScheduling.csprojResolveAssemblyReference.cache
+C:\Users\egemen\Documents\Visual Studio 2015\Projects\EDFScheduling\EDFScheduling\obj\Debug\MainWindow.g.cs
+C:\Users\egemen\Documents\Visual Studio 2015\Projects\EDFScheduling\EDFScheduling\obj\Debug\App.g.cs
+C:\Users\egemen\Documents\Visual Studio 2015\Projects\EDFScheduling\EDFScheduling\obj\Debug\EDFScheduling_MarkupCompile.cache
+C:\Users\egemen\Documents\Visual Studio 2015\Projects\EDFScheduling\EDFScheduling\obj\Debug\EDFScheduling_MarkupCompile.lref
+C:\Users\egemen\Documents\Visual Studio 2015\Projects\EDFScheduling\EDFScheduling\bin\Debug\EDFScheduling.exe
+C:\Users\egemen\Documents\Visual Studio 2015\Projects\EDFScheduling\EDFScheduling\bin\Debug\EDFScheduling.pdb
+C:\Users\egemen\Documents\Visual Studio 2015\Projects\EDFScheduling\EDFScheduling\obj\Debug\MainWindow.baml
+C:\Users\egemen\Documents\Visual Studio 2015\Projects\EDFScheduling\EDFScheduling\obj\Debug\EDFScheduling.g.resources
+C:\Users\egemen\Documents\Visual Studio 2015\Projects\EDFScheduling\EDFScheduling\obj\Debug\EDFScheduling.Properties.Resources.resources
+C:\Users\egemen\Documents\Visual Studio 2015\Projects\EDFScheduling\EDFScheduling\obj\Debug\EDFScheduling.csproj.GenerateResource.Cache
+C:\Users\egemen\Documents\Visual Studio 2015\Projects\EDFScheduling\EDFScheduling\obj\Debug\EDFScheduling.exe
+C:\Users\egemen\Documents\Visual Studio 2015\Projects\EDFScheduling\EDFScheduling\obj\Debug\EDFScheduling.pdb
+C:\Users\egemen\documents\visual studio 2015\Projects\EDFScheduling\EDFScheduling\obj\Debug\ProcessInput.g.cs
+C:\Users\egemen\documents\visual studio 2015\Projects\EDFScheduling\EDFScheduling\obj\Debug\ProcessInput.baml
+C:\Users\egemen\Desktop\EDFScheduling\EDFCode\EDFScheduling\bin\Debug\EDFScheduling.exe.config
+C:\Users\egemen\Desktop\EDFScheduling\EDFCode\EDFScheduling\obj\Debug\EDFScheduling.exe
+C:\Users\egemen\Desktop\EDFScheduling\EDFCode\EDFScheduling\obj\Debug\EDFScheduling.pdb
