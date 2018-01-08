@@ -1,8 +1,8 @@
-﻿<Application x:Class="EDFScheduling.App"
+﻿<Application x:Class="EDFScheduling.UI.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:EDFScheduling"
-             StartupUri="ProcessInput.xaml">
+             StartupUri="UI/ProcessInput.xaml">
     <Application.Resources>
          
     </Application.Resources>

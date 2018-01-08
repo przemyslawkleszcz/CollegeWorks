@@ -1,38 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace EDFScheduling
+namespace EDFScheduling.Types
 {
-    class PeriodicProcessManager
+    public class PeriodicTaskManager
     {
-        private readonly UIManager _uiMgr;
-        private readonly List<PeriodicProcess> _processes;
+        private readonly UiManager _uiMgr;
+        private readonly List<PeriodicTask> _processes;
         private readonly int _leastCommonMultiple;
         private int _cpRemaining; //Current Process Remaining Steps
-        private PeriodicProcess _currentProcess;
+        private PeriodicTask _currentProcess;
         
 
-        public PeriodicProcessManager(List<PeriodicProcess> processes)
+        public PeriodicTaskManager(List<PeriodicTask> processes)
         {
             _processes = processes;
             var utilization = Utils.CalculateUtilization(_processes);
 
-            //if (Utilization > 100)
-            //{
-            //    throw new ArgumentException(String.Format("The system cannot be scheduled with EDF. {0}% > 100%", Utilization), "Utilization");
-            //}
+            _leastCommonMultiple = Utils.CalculateLcm(_processes);
 
-            _leastCommonMultiple = Utils.CalculateLCM(_processes);
-
-            _uiMgr = new UIManager(this._processes.Count, _leastCommonMultiple); //Initializing UI Manager 
-            _uiMgr.AddToUI(_processes, utilization);
+            _uiMgr = new UiManager(this._processes.Count, _leastCommonMultiple); //Initializing UI Manager 
+            _uiMgr.AddToUi(_processes, utilization);
         }
 
         public void ScheduleTasks()
         {
             var step = 0;
             int processIndex;
-            var processQueue = new List<PeriodicProcess>();
+            var processQueue = new List<PeriodicTask>();
 
             while (step < _leastCommonMultiple)
             {
@@ -77,7 +72,7 @@ namespace EDFScheduling
             }
         }
 
-        int PickProcess(List<PeriodicProcess> processQueue)
+        int PickProcess(List<PeriodicTask> processQueue)
         {
             var minPeriod = processQueue[0].Period;
             var minIndex = 0;
@@ -93,10 +88,10 @@ namespace EDFScheduling
             return minIndex;
         }
 
-        int RunProcess(PeriodicProcess _process)
+        int RunProcess(PeriodicTask process)
         {
-            _process.CanProcess = false;
-            return _process.ExecutionTime;
+            process.CanProcess = false;
+            return process.ExecutionTime;
         }
     }
 }
