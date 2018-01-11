@@ -1,0 +1,16 @@
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\bin\Release\EDFScheduling.exe.config
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\bin\Release\EDFScheduling.exe
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\bin\Release\EDFScheduling.pdb
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Release\EDFScheduling.csprojResolveAssemblyReference.cache
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Release\UI\MainWindow.baml
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Release\UI\ProcessInput.baml
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Release\UI\MainWindow.g.cs
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Release\UI\ProcessInput.g.cs
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Release\UI\App.g.cs
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Release\EDFScheduling_MarkupCompile.cache
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Release\EDFScheduling.g.resources
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Release\EDFScheduling.Properties.Resources.resources
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Release\EDFScheduling.csproj.GenerateResource.Cache
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Release\EDFScheduling.csproj.CoreCompileInputs.cache
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Release\EDFScheduling.exe
+I:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Discrete Processes Modeling\EDF\EDFScheduling\obj\Release\EDFScheduling.pdb

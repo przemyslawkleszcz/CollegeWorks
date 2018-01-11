@@ -8,7 +8,7 @@ namespace EDFScheduling.Types
         private readonly UiManager _uiMgr;
         private readonly List<PeriodicTask> _tasks;
         private readonly int _leastCommonMultiple;
-        private int _cpRemaining; //Current Process Remaining Steps
+        private int _cpRemaining; 
         private PeriodicTask _currentTask;
         
 
@@ -19,7 +19,7 @@ namespace EDFScheduling.Types
 
             _leastCommonMultiple = Utils.CalculateLcm(_tasks);
 
-            _uiMgr = new UiManager(this._tasks.Count, _leastCommonMultiple); //Initializing UI Manager 
+            _uiMgr = new UiManager(this._tasks.Count, _leastCommonMultiple); 
             _uiMgr.AddToUi(_tasks, utilization);
         }
 
@@ -31,13 +31,12 @@ namespace EDFScheduling.Types
 
             while (step < _leastCommonMultiple)
             {
-                if (_cpRemaining == 1) //Current Process has been finished
+                if (_cpRemaining == 1) 
                     _currentTask = null;
 
-                if (_currentTask != null) //If there is a process running, Decrease remaining steps
+                if (_currentTask != null) 
                     _cpRemaining -= 1;
-
-                else // If it is free, run a process
+                else 
                 {
                     foreach (var task in _tasks)
                     {
@@ -50,15 +49,13 @@ namespace EDFScheduling.Types
                         if (task.CanProcess)
                             taskQueue.Add(task);
                     }
+
                     if (taskQueue.Count > 0)
                     {
                         taskIndex = GetMinPeriodTaskIndex(taskQueue);
                         _currentTask = _tasks.Find(o => o.Number == taskQueue[taskIndex].Number);
                         _cpRemaining = RunTask(_currentTask);
-                        Console.WriteLine("Index: " + (_currentTask.Number + 1) + " on step " + step);
                     }
-                    else
-                        Console.WriteLine("No process executed on step " + step);
                 }
                 
                 if (_currentTask != null)
