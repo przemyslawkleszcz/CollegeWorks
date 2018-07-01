@@ -1,0 +1,14 @@
+﻿<div ng-controller="exchangeRatesController as exCtrl">
+    <h2>Kursy walut</h2>
+    <label>Tabela:</label>
+    <select kendo-drop-down-list style="width: 10%;" ng-model="exCtrl.inputValue" k-on-change="exCtrl.getExchangeRates()">
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+    </select>
+    <br><br>
+    <kendo-grid options="exCtrl.mainGridOptions" k-data-source="exCtrl.data">
+    </kendo-grid>
+</div>
+
+

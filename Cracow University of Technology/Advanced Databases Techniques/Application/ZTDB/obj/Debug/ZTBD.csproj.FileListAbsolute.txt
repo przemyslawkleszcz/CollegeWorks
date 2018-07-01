@@ -1,0 +1,57 @@
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\bin\Debug\ZTBD.exe.config
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\bin\Debug\ZTBD.exe
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\bin\Debug\ZTBD.pdb
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\bin\Debug\LitJSON.dll
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\bin\Debug\telerik.windows.controls.charting.dll
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\bin\Debug\Telerik.Windows.Controls.dll
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\bin\Debug\Telerik.Windows.Data.dll
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\bin\Debug\Telerik.Windows.Controls.xml
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\bin\Debug\telerik.windows.controls.charting.xml
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\bin\Debug\Telerik.Windows.Data.xml
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\bin\Debug\de\Telerik.Windows.Controls.resources.dll
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\bin\Debug\es\Telerik.Windows.Controls.resources.dll
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\bin\Debug\fr\Telerik.Windows.Controls.resources.dll
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\bin\Debug\it\Telerik.Windows.Controls.resources.dll
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\bin\Debug\nl\Telerik.Windows.Controls.resources.dll
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\bin\Debug\tr\Telerik.Windows.Controls.resources.dll
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\obj\Debug\ZTBD.csprojResolveAssemblyReference.cache
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\obj\Debug\UI\MainWindow.g.cs
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\obj\Debug\UI\App.g.cs
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\obj\Debug\ZTBD_MarkupCompile.cache
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\obj\Debug\ZTBD_MarkupCompile.lref
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\obj\Debug\UI\MainWindow.baml
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\obj\Debug\ZTBD.g.resources
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\obj\Debug\ZTBD.Properties.Resources.resources
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\obj\Debug\ZTBD.csproj.GenerateResource.cache
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\obj\Debug\ZTBD.csproj.CoreCompileInputs.cache
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\obj\Debug\ZTBD.csproj.CopyComplete
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\obj\Debug\ZTBD.exe
+C:\Users\przemyslaw.kleszcz\Desktop\ZTDB\obj\Debug\ZTBD.pdb
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\bin\Debug\ZTBD.exe.config
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\bin\Debug\ZTBD.exe
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\bin\Debug\LitJSON.dll
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\bin\Debug\telerik.windows.controls.charting.dll
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\bin\Debug\Telerik.Windows.Controls.dll
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\bin\Debug\Telerik.Windows.Data.dll
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\bin\Debug\Telerik.Windows.Controls.xml
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\bin\Debug\telerik.windows.controls.charting.xml
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\bin\Debug\Telerik.Windows.Data.xml
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\bin\Debug\de\Telerik.Windows.Controls.resources.dll
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\bin\Debug\es\Telerik.Windows.Controls.resources.dll
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\bin\Debug\fr\Telerik.Windows.Controls.resources.dll
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\bin\Debug\it\Telerik.Windows.Controls.resources.dll
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\bin\Debug\nl\Telerik.Windows.Controls.resources.dll
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\bin\Debug\tr\Telerik.Windows.Controls.resources.dll
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\obj\Debug\ZTBD.csprojResolveAssemblyReference.cache
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\obj\Debug\UI\MainWindow.g.cs
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\obj\Debug\UI\App.g.cs
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\obj\Debug\ZTBD_MarkupCompile.cache
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\obj\Debug\ZTBD_MarkupCompile.lref
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\obj\Debug\UI\MainWindow.baml
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\obj\Debug\ZTBD.g.resources
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\obj\Debug\ZTBD.Properties.Resources.resources
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\obj\Debug\ZTBD.csproj.GenerateResource.cache
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\obj\Debug\ZTBD.csproj.CoreCompileInputs.cache
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\obj\Debug\ZTBD.csproj.CopyComplete
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\obj\Debug\ZTBD.exe
+D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Advanced Databases Techniques\Application\ZTDB\obj\Debug\ZTBD.pdb

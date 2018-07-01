@@ -1,0 +1,95 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;    
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    /*max-width: 280px;*/
+}
+
+h1 {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolbar) {
+    background-color: forestgreen;
+    color: rgb(255, 255, 255);
+    border-bottom: 5px solid darkgreen;
+}
+
+.md-button._md-nav-button.md-unselected {
+    color: rgb(255, 255, 255) !important;
+}
+
+.md-button.md-default-theme.md-accent, .md-button.md-accent {
+    color: rgb(255, 255, 255);    
+}
+
+md-nav-bar.md-default-theme md-nav-ink-bar, md-nav-bar md-nav-ink-bar {
+    color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+}
+
+/*.k-header.k-grid-toolbar {
+    border-color: darkgreen;
+}*/
+
+.k-block, .k-button, .k-draghandle, .k-grid-header, .k-grouping-header, .k-header, .k-pager-wrap, .k-toolbar, .k-treemap-tile, html .km-pane-wrapper .k-header {
+    background-color: darkgreen;
+}
+
+.k-header.k-grid-toolbar {
+    border-color: #898989 !important;
+}
+
+.md-button.md-default-theme.md-primary.md-raised, .md-button.md-primary.md-raised, .md-button.md-default-theme.md-primary.md-fab, .md-button.md-primary.md-fab {
+    border-color: darkgreen !important;
+    background-color: darkgreen !important;
+}
+
+md-input-container.md-default-theme.md-input-focused:not(.md-input-invalid) label, md-input-container.md-input-focused:not(.md-input-invalid) label, md-input-container.md-default-theme.md-input-focused:not(.md-input-invalid) md-icon, md-input-container.md-input-focused:not(.md-input-invalid) md-icon{
+    color: darkgreen !important;
+}
+
+md-input-container.md-default-theme.md-input-focused:not(.md-input-invalid) .md-input, md-input-container.md-input-focused:not(.md-input-invalid) .md-input, md-input-container.md-default-theme.md-input-resized:not(.md-input-invalid) .md-input, md-input-container.md-input-resized:not(.md-input-invalid) .md-input{
+    border-color: darkgreen !important;
+}
+
+html {
+    font-size: 12px;
+}
+.k-grid td {
+    line-height: 2em;
+}
+
+.md-titleTolbar{
+    min-height: 44px;
+    height: 44px !important;
+}
+
+.md-toolbar-tools{
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+#mainToolbar .k-group, .k-flatcolorpicker.k-group, .k-menu, .k-menu .k-group, .k-popup.k-widget.k-context-menu {
+    color: rgb(255, 255, 255) !important;
+    background-color: forestgreen !important;
+}
+
+#mainToolbar a{
+    color: inherit;
+}
+
+

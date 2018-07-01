@@ -1,0 +1,5 @@
+﻿  stdafx.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+  main.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+  TestPrir.vcxproj -> D:\Projects\PRIR2\OpenMP\Zadanie1\x64\Debug\TestPrir.exe

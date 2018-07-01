@@ -1,0 +1,7 @@
+﻿  stdafx.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+  main.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+d:\projects\prir2\openmp\zadanie4\testprir\main.cpp(78): warning C4244: 'argument': conversion from '__int64' to 'long double', possible loss of data
+d:\projects\prir2\openmp\zadanie4\testprir\main.cpp(78): warning C4244: 'initializing': conversion from 'long double' to '__int64', possible loss of data
+  TestPrir.vcxproj -> D:\Projects\PRIR2\OpenMP\Zadanie4\x64\Debug\TestPrir.exe

@@ -1,0 +1,8 @@
+﻿  stdafx.cpp
+  mvec.cpp
+  MatVect_lab_vect_regist.cpp
+  Generating Code...
+d:\projects\mzt\z2\matvect_lab_vect_regist\mvec.cpp(134): warning C4752: found Intel(R) Advanced Vector Extensions; consider using /arch:AVX
+MatVect_lab_vect_regist.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+  MatVect_lab_vect_regist.vcxproj -> D:\Projects\MZT\Z2\Debug\MatVect_lab_vect_regist.exe
+  MatVect_lab_vect_regist.vcxproj -> D:\Projects\MZT\Z2\Debug\MatVect_lab_vect_regist.pdb (Full PDB)

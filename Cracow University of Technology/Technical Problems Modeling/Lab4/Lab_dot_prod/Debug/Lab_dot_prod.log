@@ -1,0 +1,7 @@
+﻿  stdafx.cpp
+  Lab_dot_prod.cpp
+d:\googledrive\studia\github\collegeworks\cracow university of technology\technical problems modeling\lab4\lab_dot_prod\lab_dot_prod.cpp(16): warning C4101: 'ThreadID': unreferenced local variable
+  funthrd.cpp
+  Generating Code...
+funthrd.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+  Lab_dot_prod.vcxproj -> D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Technical Problems Modeling\Lab4\Debug\Lab_dot_prod.exe

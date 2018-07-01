@@ -1,0 +1,28 @@
+﻿<div ng-controller="goldValueController as genCtrl">
+    <h2>Cena złota</h2>
+    <label>Ilość dni:</label>
+    <input kendo-numeric-text-box k-min="0" k-max="20" k-ng-model="genCtrl.inputValue" style="width: 10%;" k-on-change="genCtrl.getGoldValues()"/>
+    <br><br>
+    <div class="k-content">
+        <div>
+            <div kendo-chart
+                 k-title="{
+                     align: 'left'
+                 }"
+                 k-series-defaults="{
+                    type: 'column',
+                     labels: {
+                         visible: true,
+                         background: 'transparent'
+                     }
+                 }"
+                 k-series="[{
+                        field: 'cena',
+                        categoryField: 'data',
+                        colorField: 'userColor'
+                 }]"
+                 k-data-source="genCtrl.data"
+                 style="height: 400px;"></div>
+        </div>
+    </div>
+</div>

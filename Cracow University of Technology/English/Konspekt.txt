@@ -1,0 +1,41 @@
+My name is Przemyslaw Kleszcz
+What I'd like to present to you today is History of virtual reality. 
+I'm going to tell you a little bit about steps of developing VR for early years.
+
+First of all, what is the virtual reality?:
+
+That means it is a computer produced vision which user can experience by using some kind of special devices and tools. 
+This technology can reproduce alternate realities by affecting our senses. 
+For instance wearing specialized headsets and gloves enables us to see and interact with artifical world.
+
+The first attempts of producing VR is panoramic paintings and murals from 19th century.  
+This paintings were intended to fill entire field of vision, making the observer feel present at some historical events. 
+
+In 19th century some researchers discovered that the brain processes two dimensional images in each eye into one single three dimensional image. 
+It was the foundation of creating a stereoscope. Device which can provide feeling of 3d image. By using this device people created virtual excursions which becomes very popular.
+
+In 1929 researcher Edward Link created device called Link Trainer.
+It was first example of commercial flight simmulator. 
+It used serveral engines to simmulate behaviour of the machine during the flight. 
+
+Did you now that thanks to a writer Stanley Weinbaum and his science fiction novel nowadays VR devices got it looks? 
+He thougt up an idea of pair of googles that let the wearer experience a fictional world. 
+
+The first modern looking VR headsets appeared in 1960. It was an invention of Morton Heilig's. 
+It was named Telesphere Mask. It provides simple simmulated 3d graphics and stereo sound.
+
+Do you now from which name virtual reality came? Jaron Laner came up with this in 1997. 
+He was the founder of company vpl which developed a range of VR gears.
+Slide shows example prices for few of them.
+For example eyephone hrx cost was nearly 49 thousand dollars.
+
+1993 SEGA VR glasses could be a huge milestone in VR technologies. The prototype model supports head tracking, stereo sound, modern lcd displays in the visor. The device remained forever in the prototype phase because of technology difficulties.
+
+21st century is the time of amazing computational power growth. The devices such as oculus and vive eventually can support many things that cannot be implemented in the past. This is also an time of smartphones and low cost devices which uses smartphones as image source. 
+
+
+
+
+
+
+

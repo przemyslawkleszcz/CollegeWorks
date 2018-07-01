@@ -1,0 +1,6 @@
+﻿  stdafx.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+  main.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+d:\googledrive\studia\github\collegeworks\cracow university of technology\parallel and distributed programming\mpi\vs\zadanie1\testprir\main.cpp(32): warning C4566: character represented by universal-character-name '\u00F3' cannot be represented in the current code page (1251)
+  TestPrir.vcxproj -> D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Parallel And Distributed Programming\MPI\VS\Zadanie1\x64\Debug\TestPrir.exe

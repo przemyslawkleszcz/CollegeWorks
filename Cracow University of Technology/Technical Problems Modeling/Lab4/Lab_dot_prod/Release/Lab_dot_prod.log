@@ -1,0 +1,8 @@
+﻿  stdafx.cpp
+  funthrd.cpp
+  Lab_dot_prod.cpp
+d:\googledrive\studia\github\collegeworks\cracow university of technology\technical problems modeling\lab4\lab_dot_prod\lab_dot_prod.cpp(16): warning C4101: 'ThreadID': unreferenced local variable
+  Generating code
+  All 16 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Lab_dot_prod.vcxproj -> D:\GoogleDrive\Studia\Github\CollegeWorks\Cracow University of Technology\Technical Problems Modeling\Lab4\Release\Lab_dot_prod.exe

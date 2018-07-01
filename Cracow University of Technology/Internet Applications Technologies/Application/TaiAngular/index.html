@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html ng-app="TAI">
+<head>
+    <!--<base href="MyApp/" />-->
+    <title>TAI Aplikacja</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link href="content/css/site.css" rel="stylesheet" />
+    <link href="content/kendo/2016.2.607/kendo.common-material.min.css" rel="stylesheet" type="text/css" />
+    <link href="content/kendo/2016.2.607/kendo.mobile.all.min.css" rel="stylesheet" type="text/css" />
+    <link href="content/kendo/2016.2.607/kendo.dataviz.min.css" rel="stylesheet" type="text/css" />
+    <link href="content/kendo/2016.2.607/kendo.material.min.css" rel="stylesheet" type="text/css" />
+    <link href="content/kendo/2016.2.607/kendo.dataviz.material.min.css" rel="stylesheet" type="text/css" />
+    <link href="content/css/kendo.custom.css" rel="stylesheet" type="text/css" />
+    <link href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+
+    <script src="scripts/kendo/2016.2.607/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-resource.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-cookies.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-sanitize.js"></script>
+
+    <script src="scripts/kendo/2016.2.607/kendo.all.min.js"></script>
+    <script src="scripts/kendo/2016.2.607/kendo.aspnetmvc.min.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/controllers/indexController.js"></script>
+    <script src="app/controllers/exchangeRatesController.js"></script>
+    <script src="app/controllers/goldValueController.js"></script>
+
+</head>
+<body>
+    <md-toolbar id="mainToolbar" layout="row" class="md-toolbar-tools" ng-controller="indexController as indCtrl">
+        &nbsp;
+        <ul kendo-menu>
+            <li><a href="#/exchangerates">Kursy walut</a></li>
+            <li><a href="#/goldvalue">Ceny zlota</a></li>
+        </ul>
+    </md-toolbar>
+
+    <div class="body-content">
+        <div ng-view="">
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

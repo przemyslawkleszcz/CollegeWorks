@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ZTBD.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SqlServerConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Initial Catalog=AdventureWorks2017;Data Source=.\SQLEXPRESS;Integrated Security=SSPI;</Value>
+    </Setting>
+    <Setting Name="AttemptsCounter" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="SqlServerQuery" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select * from [AdventureWorks2017].[Person].[Person]</Value>
+    </Setting>
+    <Setting Name="CouchDbServer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost:5984</Value>
+    </Setting>
+    <Setting Name="CouchDbDataBase" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">adventureworks</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
